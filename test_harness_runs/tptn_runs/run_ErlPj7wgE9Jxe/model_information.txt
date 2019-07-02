@@ -1,0 +1,29 @@
+Feature columns used by model: 
+["AlaCount", "T1_absq", "T1_netq", "Tend_absq", "Tend_netq", "Tminus1_absq", "Tminus1_netq", "abego_res_profile", "abego_res_profile_penalty", "avg_all_frags", "avg_best_frag", "bb", "buns_bb_heavy", "buns_nonheavy", "buns_sc_heavy", "buried_minus_exposed", "buried_np", "buried_np_AFILMVWY", "buried_np_AFILMVWY_per_res", "buried_np_per_res", "buried_over_exposed", "chymo_cut_sites", "chymo_with_LM_cut_sites", "contact_all", "contact_core_SASA", "contact_core_SCN", "contig_not_hp_avg", "contig_not_hp_avg_norm", "contig_not_hp_internal_max", "contig_not_hp_max", "degree", "dslf_fa13", "entropy", "exposed_hydrophobics", "exposed_np_AFILMVWY", "exposed_polars", "exposed_total", "fa_atr", "fa_atr_per_res", "fa_dun_dev", "fa_dun_rot", "fa_dun_semi", "fa_elec", "fa_intra_atr_xover4", "fa_intra_elec", "fa_intra_rep_xover4", "fa_intra_sol_xover4", "fa_rep", "fa_rep_per_res", "fa_sol", "frac_helix", "frac_loop", "frac_sheet", "fxn_exposed_is_np", "hbond_bb_sc", "hbond_lr_bb", "hbond_lr_bb_per_sheet", "hbond_sc", "hbond_sr_bb", "hbond_sr_bb_per_helix", "helix_sc", "holes", "hphob_sc_contacts", "hphob_sc_degree", "hxl_tors", "hydrophobicity", "largest_hphob_cluster", "lk_ball", "lk_ball_bridge", "lk_ball_bridge_uncpl", "lk_ball_iso", "loop_sc", "mismatch_probability", "n_charged", "n_hphob_clusters", "n_hydrophobic", "n_hydrophobic_noA", "n_polar_core", "n_res", "nearest_chymo_cut_to_Cterm", "nearest_chymo_cut_to_Nterm", "nearest_chymo_cut_to_term", "nearest_tryp_cut_to_Cterm", "nearest_tryp_cut_to_Nterm", "nearest_tryp_cut_to_term", "net_atr_net_sol_per_res", "net_atr_per_res", "net_sol_per_res", "netcharge", "nres", "nres_helix", "nres_loop", "nres_sheet", "omega", "one_core_each", "p_aa_pp", "pack", "percent_core_SASA", "percent_core_SCN", "pro_close", "rama_prepro", "ref", "res_count_core_SASA", "res_count_core_SCN", "score_per_res", "ss_contributes_core", "ss_sc", "sum_best_frags", "total_score", "tryp_cut_sites", "two_core_each", "worst6frags", "worstfrag"]
+
+
+Model Instantiation Trace:
+ Level 0
+ - Path: /work/05689/jestrada/test-harness-v3/test-harness/harness/test_harness_models_abstract_classes.py
+ - Line: 13,  Function: __init__
+
+ Level 1
+ - Path: /work/05689/jestrada/test-harness-v3/test-harness/harness/th_model_instances/hamed_models/random_forest_classification.py
+ - Line: 14,  Function: random_forest_classification
+
+ Level 2
+ - Path: /work/05689/jestrada/test-harness-v3/test-harness/harness/test_harness_class.py
+ - Line: 378,  Function: _execute_run
+
+ Level 3
+ - Path: /work/05689/jestrada/test-harness-v3/test-harness/harness/test_harness_class.py
+ - Line: 135,  Function: run_custom
+
+ Level 4
+ - Path: tptn_run.py
+ - Line: 74,  Function: main
+
+ Level 5
+ - Path: tptn_run.py
+ - Line: 85,  Function: <module>
+

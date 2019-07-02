@@ -1,0 +1,13 @@
+notebooks TODO:
+
+
+- statistical side
+    * KS values 
+    * initial visualizations
+
+- ML side
+    * feature influence 
+    * random forest regressors/classifiers
+    * LOO results
+    
+   
