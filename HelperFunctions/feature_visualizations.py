@@ -254,7 +254,12 @@ def loo_plot(tuple_with_list_and_metric):
 def get_count_percentiles_list(df):
     total_n_features = len(df)
     percentiles = [.65,.5,.25,.15]
-
+    spc_features = [
+        'S_PC', 'Mean_H_entropy', 'Mean_L_entropy', 'Mean_E_entropy', 
+        'Mean_res_entropy', 'SumH_entropies', 'SumL_entropies', 'SumE_entropies', 
+        'H_max_entropy', 'H_min_entropy', 'H_range_entropy', 'L_max_entropy', 
+        'L_min_entropy', 'L_range_entropy', 'E_max_entropy', 'E_min_entropy', 
+        'E_range_entropy']
     count_percentiles_list = []
 
     for i in range(len(percentiles)):
@@ -266,7 +271,8 @@ def get_count_percentiles_list(df):
         df_percentile  = df.iloc[:n_percentile,:]
 
         #get number of entropy features in subset
-        count_percentile = len(df_percentile[df_percentile['Feature'].isin(entropy_features)])
+        count_percentile = len(
+            df_percentile[df_percentile['Feature'].isin(spc_features)])
 
         #add it to the list
         count_percentiles_list.append(count_percentile)
@@ -358,6 +364,18 @@ def make_topologies_list(file_path_of_results):
     final_df = pd.concat(df_list)
     return final_df
     
-
+def rank_features(audit_df,just_entropy=False):
+    df = audit_df.copy()
+    spc_features = [
+        'S_PC', 'Mean_H_entropy', 'Mean_L_entropy', 'Mean_E_entropy', 
+        'Mean_res_entropy', 'SumH_entropies', 'SumL_entropies', 'SumE_entropies', 
+        'H_max_entropy', 'H_min_entropy', 'H_range_entropy', 'L_max_entropy', 
+        'L_min_entropy', 'L_range_entropy', 'E_max_entropy', 'E_min_entropy', 
+        'E_range_entropy']
+    if just_entropy:
+        return df[df['Feature'].isin(spc_features)]
+    df['Importance'] = df['Importance'].round(3)
+    return df
+    
     
 
