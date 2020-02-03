@@ -1,12 +1,3 @@
-from sklearn.ensemble import GradientBoostingClassifier
-from harness.th_model_classes.class_sklearn_classification import SklearnClassification
-
-
-def gbc_classification():
-    # Creating  model:
-    model = GradientBoostingClassifier()
-
-    # Creating an instance of the SklearnClassification TestHarnessModel subclass
-    th_model = SklearnClassification(model=model, model_author='Jan',
-                                     model_description="Gradient Boosting Classifier, sklearn default params")
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:7300b6a115cf820237577ef521dffe8af886559b6579f0f0f9e44827eeab9b0b
+size 520

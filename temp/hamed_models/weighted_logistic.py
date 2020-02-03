@@ -1,9 +1,3 @@
-from sklearn.linear_model import LogisticRegression
-from harness.th_model_classes.class_sklearn_classification import SklearnClassification
-
-
-def weighted_logistic_classifier():
-    weighted_logistic = LogisticRegression(class_weight="balanced", n_jobs=-1)
-    th_model = SklearnClassification(model=weighted_logistic, model_author='Hamed',
-                                     model_description="Logistic: class_weight='balanced'")
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7eaa285156091691ff932870f36e8a14f86ede9673f5a67f638a63a5d03bb01
+size 453

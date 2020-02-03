@@ -1,12 +1,3 @@
-from sklearn.neighbors import KNeighborsClassifier
-from harness.th_model_classes.class_sklearn_classification import SklearnClassification
-
-
-def knn_classifier():
-    # Creating  model:
-    model = KNeighborsClassifier()
-
-    # Creating an instance of the SklearnClassification TestHarnessModel subclass
-    th_model = SklearnClassification(model=model, model_author='Jan',
-                                     model_description="K-NN classifier, sklearn default params")
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:110f904d8772021ceaf2a5f758470f47ae4cc793f8be116e54240a8947433627
+size 492

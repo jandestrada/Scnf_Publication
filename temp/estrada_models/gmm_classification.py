@@ -1,12 +1,3 @@
-from sklearn.mixture import GaussianMixture
-from harness.th_model_classes.class_sklearn_classification import SklearnClassification
-
-
-def gmm_classification():
-    # Creating  model:
-    model = GaussianMixture(n_components=2)
-
-    # Creating an instance of the SklearnClassification TestHarnessModel subclass
-    th_model = SklearnClassification(model=model, model_author='Jan',
-                                     model_description="Gaussian Mixture Classifier, n_components=2")
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:929b2f8fa1231238ce03f11cc344a0c827630f09ea41d997143637fd5dc1edc6
+size 502

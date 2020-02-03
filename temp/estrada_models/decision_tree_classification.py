@@ -1,12 +1,3 @@
-from sklearn.tree import DecisionTreeClassifier
-from harness.th_model_classes.class_sklearn_classification import SklearnClassification
-
-
-def decision_tree_classification():
-    # Creating  model:
-    model = DecisionTreeClassifier()
-
-    # Creating an instance of the SklearnClassification TestHarnessModel subclass
-    th_model = SklearnClassification(model=model, model_author='Jan',
-                                     model_description="Decision Tree Classifier, sklearn default params")
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:501436797633f710903763d97859b4a5ef0583477cc5b3919281c53ccb27ed4c
+size 514

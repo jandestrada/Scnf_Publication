@@ -1,14 +1,3 @@
-import os
-import pandas as pd
-from sklearn.cross_decomposition import PLSRegression()
-from harness.th_model_classes.class_sklearn_regression import SklearnRegression
-
-
-def pls_regression():
-    # Creating  model:
-    model = PLSRegression()
-
-    # Creating an instance of the SklearnRegression TestHarnessModel subclass
-    th_model = Ridge(model=model, model_author="Jan",
-                                 model_description="Partial least squares regression, sklearn default params"
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8a93222c3e547cc73cb1ccb54c3ee93d6fa05fa8e17b62d89418263636242f5
+size 504

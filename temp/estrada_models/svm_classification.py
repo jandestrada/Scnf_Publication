@@ -1,12 +1,3 @@
-from sklearn.svm import SVC
-from harness.th_model_classes.class_sklearn_classification import SklearnClassification
-
-
-def svm_classification():
-    # Creating  model:
-    model = SVC(probability=True)
-
-    # Creating an instance of the SklearnClassification TestHarnessModel subclass
-    th_model = SklearnClassification(model=model, model_author='Jan',
-                                     model_description="Support Vector Classifier, sklearn default params")
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:94ac1c570472284ae37aed59f6e2d2a5ff5c897dd2486478b91ef10dd0e75a0f
+size 482

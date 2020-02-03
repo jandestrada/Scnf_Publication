@@ -1,12 +1,3 @@
-from sklearn.naive_bayes import GaussianNB
-from harness.th_model_classes.class_sklearn_classification import SklearnClassification
-
-
-def naive_bayes_classification():
-    # Creating  model:
-    nbc = GaussianNB()
-
-    # Creating an instance of the SklearnClassification TestHarnessModel subclass
-    th_model = SklearnClassification(model=nbc, model_author='Jan',
-                                     model_description="Naive Bayes Classifier, sklearn default params")
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:d81537370a1a3c50fd10b83d5da48f74e1ae55dc82bf292248050910dc5773f2
+size 489

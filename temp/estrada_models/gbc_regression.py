@@ -1,14 +1,3 @@
-import os
-import pandas as pd
-from sklearn.ensemble import GradientBoostingRegressor
-from harness.th_model_classes.class_sklearn_regression import SklearnRegression
-
-
-def ridge_regression():
-    # Creating  model:
-    model = GradientBoostingRegressor()
-
-    # Creating an instance of the SklearnRegression TestHarnessModel subclass
-    th_model = Ridge(model=model, model_author="Jan",
-                                 model_description="Gradient Boosted Regressor, sklearn default params"
-    return th_model
+version https://git-lfs.github.com/spec/v1
+oid sha256:f048cca64bde535afde41c95fc485ad75f22b7889b1d1256593258dc1b484349
+size 511
