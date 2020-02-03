@@ -25,3 +25,4 @@ temp/hamed_models/joint_regression_model.py filter=lfs diff=lfs merge=lfs -text
 temp/estrada_models/gbc_regression.py filter=lfs diff=lfs merge=lfs -text
 temp/estrada_models/gmm_classification.py filter=lfs diff=lfs merge=lfs -text
 temp/estrada_models/knn_classification.py filter=lfs diff=lfs merge=lfs -text
+temp/df_aggregated_spc.csv filter=lfs diff=lfs merge=lfs -text
