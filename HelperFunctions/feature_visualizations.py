@@ -8,6 +8,12 @@ def show_all_plots(
     import matplotlib.pyplot as plt
     import seaborn as sns
     import pandas as pd
+    import matplotlib.patches as mpatches
+    
+    import os
+    
+    if not os.path.isdir("./SavedFigures"):
+        os.makedirs("./SavedFigures")
     
     y = data[target] #target
     x = data[features] #features
@@ -18,6 +24,8 @@ def show_all_plots(
     F, T = y.value_counts()
     print('Number of Unstable: %i'%F)
     print("number of Stable: %i"%T)
+    plt.savefig(os.path.join("SavedFigures","BARPLOT_"+title_name),dpi=300)
+    
     plt.show()
     plt.close('all')
     
@@ -27,22 +35,34 @@ def show_all_plots(
     data_n_2 = (data - data.mean()) / (data.std())              # standardization
     data = pd.concat([y,data_n_2.iloc[:,:18]],axis=1)
     data = pd.melt(data,id_vars='stabilityscore_cnn_calibrated_2classes',
-                        var_name='features',
+                        var_name='Features',
                         value_name=None)
     plt.figure(figsize=(10,10))
-    sns.violinplot(x='features', y=None, hue='stabilityscore_cnn_calibrated_2classes',data=data,split=True, inner="quart")
+    sns.violinplot(x='Features', y=None, hue='stabilityscore_cnn_calibrated_2classes',data=data,split=True, inner="quart")
     plt.xticks(rotation=90)
+    orange_patch = mpatches.Patch(color='tab:orange', label='unstable proteins')
+    blue_patch = mpatches.Patch(color='tab:blue', label='stable proteins')
+    plt.legend(handles=[orange_patch,blue_patch])
     plt.title(title_name,fontsize='18.5')
+    plt.savefig(os.path.join("SavedFigures","VIOLINPLOT_"+title_name),dpi=300,bbox_inches='tight')
+    
+    
     plt.show()
     plt.close('all')
     
     
     #box plot
     plt.figure(figsize=(10,10))
-    sns.boxplot(x="features", y=None, hue='stabilityscore_cnn_calibrated_2classes', data=data)
+    sns.boxplot(x="Features", y=None, hue='stabilityscore_cnn_calibrated_2classes', data=data)
     plt.xticks(rotation=90)
     #plt.legend(title='stabilityscore_cnn_calibrated_2classes',labels=['unstable','stable'])
+    orange_patch = mpatches.Patch(color='tab:orange', label='unstable proteins')
+    blue_patch = mpatches.Patch(color='tab:blue', label='stable proteins')
+    plt.legend(handles=[orange_patch,blue_patch])
     plt.title(title_name,fontsize='18.5')
+    
+    plt.savefig(os.path.join("SavedFigures","BOXPLOT_"+title_name),dpi=300,bbox_inches='tight')
+    
     plt.show()
     plt.close('all')
     
