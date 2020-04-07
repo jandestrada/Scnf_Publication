@@ -42,8 +42,14 @@ def show_all_plots(
     plt.xticks(rotation=90)
     orange_patch = mpatches.Patch(color='tab:orange', label='unstable proteins')
     blue_patch = mpatches.Patch(color='tab:blue', label='stable proteins')
-    plt.legend(handles=[orange_patch,blue_patch])
-    plt.title(title_name,fontsize='18.5')
+    plt.legend(handles=[orange_patch,blue_patch],fontsize="20")
+    
+    plt.text(0,(plt.gca().get_ylim()[-1] - 1),
+             s=title_name,bbox={"ec":"white",'fc':"white","boxstyle":"round"},
+             fontsize="28")
+    plt.xticks(fontsize="17")
+    plt.yticks(fontsize="17")
+    plt.xlabel("")
     plt.savefig(os.path.join("SavedFigures","VIOLINPLOT_"+title_name),dpi=300,bbox_inches='tight')
     
     
@@ -55,11 +61,15 @@ def show_all_plots(
     plt.figure(figsize=(10,10))
     sns.boxplot(x="Features", y=None, hue='stabilityscore_cnn_calibrated_2classes', data=data)
     plt.xticks(rotation=90)
-    #plt.legend(title='stabilityscore_cnn_calibrated_2classes',labels=['unstable','stable'])
     orange_patch = mpatches.Patch(color='tab:orange', label='unstable proteins')
     blue_patch = mpatches.Patch(color='tab:blue', label='stable proteins')
-    plt.legend(handles=[orange_patch,blue_patch])
-    plt.title(title_name,fontsize='18.5')
+    plt.legend(handles=[orange_patch,blue_patch],fontsize="20")
+    plt.text(0,(plt.gca().get_ylim()[-1] - 1),
+             s=title_name,bbox={"ec":"white",'fc':"white","boxstyle":"round"},
+             fontsize="28")
+    plt.xticks(fontsize="17")
+    plt.yticks(fontsize="17")
+    plt.xlabel("")
     
     plt.savefig(os.path.join("SavedFigures","BOXPLOT_"+title_name),dpi=300,bbox_inches='tight')
     
