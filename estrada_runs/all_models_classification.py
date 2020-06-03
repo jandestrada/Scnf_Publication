@@ -52,7 +52,7 @@ def main():
     th = TestHarness(output_location='/Users/janestrada/Desktop/SorelleSummerResearch/TestHarness')
 
     #make a list of all models to be used
-    #models_to_be_used = [random_forest_classification, keras_classification_4, decision_tree_classification,
+    # models_to_be_used = [random_forest_classification, keras_classification_4, decision_tree_classification,
     #                    gbc_classification, kmeans_classification, knn_classifier, naive_bayes_classification,
     #                    svm_classification]
 

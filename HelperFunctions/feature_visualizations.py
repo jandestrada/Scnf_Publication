@@ -42,7 +42,7 @@ def show_all_plots(
     plt.xticks(rotation=90)
     orange_patch = mpatches.Patch(color='tab:orange', label='unstable proteins')
     blue_patch = mpatches.Patch(color='tab:blue', label='stable proteins')
-    plt.legend(handles=[orange_patch,blue_patch],fontsize="20")
+    plt.legend(handles=[orange_patch,blue_patch],fontsize="20",loc="upper right")
     
     plt.text(0,(plt.gca().get_ylim()[-1] - 1),
              s=title_name,bbox={"ec":"white",'fc':"white","boxstyle":"round"},
@@ -183,11 +183,12 @@ def topology_specified_plot(
                 prop={'size':'20'})
 
 
-            plt.title("%s per topology"%metric_list[i],fontsize=30)
+            plt.title("%s per topology"%metric_list[i],fontsize=50)
+            plt.set_yticklabels(ax2.get_yticklabels(),fontsize=38)
             ax.set_xlabel("Topology ",fontsize=22)
-            ax.set_xticklabels(ax2.get_xticklabels(),fontsize=20)
-            plt.ylabel("%s"%metric_list[i],fontsize=22)
-            ax.set_ylabel("Number of samples in test group",fontsize=22)
+            ax.set_xticklabels(ax2.get_xticklabels(),fontsize=50)
+            plt.ylabel("%s"%metric_list[i],fontsize=45)
+            ax.set_ylabel("Number of samples in test group",fontsize=50)
             plt.show()
             #plt.close('all')
             
