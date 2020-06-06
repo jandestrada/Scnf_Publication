@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5c44ea08c28bbec1af9e0759dd81db5077904d264408de63bb85ec5d14b9c00
-size 246
+0
+S_PC
+Mean_H_entropy
+Mean_L_entropy
+Mean_E_entropy
+Mean_res_entropy
+SumH_entropies
+SumL_entropies
+SumE_entropies
+H_max_entropy
+H_min_entropy
+H_range_entropy
+L_max_entropy
+L_min_entropy
+L_range_entropy
+E_max_entropy
+E_min_entropy
+E_range_entropy

@@ -40,8 +40,8 @@ def show_all_plots(
     plt.figure(figsize=(10,10))
     sns.violinplot(x='Features', y=None, hue='stabilityscore_cnn_calibrated_2classes',data=data,split=True, inner="quart")
     plt.xticks(rotation=90)
-    orange_patch = mpatches.Patch(color='tab:orange', label='unstable proteins')
-    blue_patch = mpatches.Patch(color='tab:blue', label='stable proteins')
+    orange_patch = mpatches.Patch(color='tab:orange', label='stable proteins')
+    blue_patch = mpatches.Patch(color='tab:blue', label='unstable proteins')
     plt.legend(handles=[orange_patch,blue_patch],fontsize="20",loc="upper right")
     
     plt.text(0,(plt.gca().get_ylim()[-1] - 1),
