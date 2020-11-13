@@ -184,7 +184,7 @@ def topology_specified_plot(
 
 
             plt.title("%s per topology"%metric_list[i],fontsize=50)
-            plt.set_yticklabels(ax2.get_yticklabels(),fontsize=38)
+            ax.set_yticklabels(ax2.get_yticklabels(),fontsize=38)
             ax.set_xlabel("Topology ",fontsize=22)
             ax.set_xticklabels(ax2.get_xticklabels(),fontsize=50)
             plt.ylabel("%s"%metric_list[i],fontsize=45)
