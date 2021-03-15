@@ -1,4 +1,4 @@
 ,0,1,2
-0,20,"['lk_ball_iso', 'hbond_sr_bb', 'fa_atr', 'frac_sheet', 'nres_sheet', 'nres_helix', 'frac_helix', 'net_sol_per_res', 'fa_atr_per_res', 'hbond_lr_bb_per_sheet', 'bb', 'hbond_lr_bb', 'lk_ball', 'net_atr_per_res', 'fa_sol', 'holes', 'Tend_absq', 'degree', 'nres', 'n_res']",0.5708430854649111
+0,20,"['lk_ball_iso', 'hbond_sr_bb', 'fa_atr', 'frac_sheet', 'nres_sheet', 'nres_helix', 'frac_helix', 'net_sol_per_res', 'fa_atr_per_res', 'hbond_lr_bb_per_sheet', 'bb', 'hbond_lr_bb', 'lk_ball', 'net_atr_per_res', 'fa_sol', 'holes', 'Tend_absq', 'degree', 'nres', 'n_res']",0.5708430854649114
 1,10,"['lk_ball_iso', 'hbond_sr_bb', 'fa_atr', 'frac_sheet', 'nres_sheet', 'nres_helix', 'frac_helix', 'net_sol_per_res', 'fa_atr_per_res', 'hbond_lr_bb_per_sheet']",0.46537919245737547
-2,1,['lk_ball_iso'],0.413695667535115
+2,1,['lk_ball_iso'],0.4136956675351151
